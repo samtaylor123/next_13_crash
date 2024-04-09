@@ -14,7 +14,7 @@ const CourseSearch = ({getSearchResults}) => {
     };
 
     return (
-        <form onSubmit= {handleSubmit} className='search-form'>CourseSearch
+        <form onSubmit= {handleSubmit} className='search-form'>
             <input 
                 type = 'text' 
                 className='search-input' 

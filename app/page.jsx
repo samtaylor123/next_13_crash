@@ -64,7 +64,7 @@ const HomePage = () => {
 
 	return (
 		<>
-			<h1>Welcome To the App Directory</h1>
+			<h1>Welcome To the App Directory!</h1>
 			<CourseSearch getSearchResults={(results) => setCourses(results) } />
 			<Courses courses={homeCourses} />
 		</>

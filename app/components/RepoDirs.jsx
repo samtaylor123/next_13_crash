@@ -6,7 +6,7 @@ async function fetchRepoContents(name) {
 
     const response = await fetch(`https://api.github.com/repos/samtaylor123/${name}/contents`, {
             
-        // if you have data that changes often then add this
+        // if you have data that changes often then add this \/ \/
         next: {
             revalidate: 60
         }
@@ -18,11 +18,10 @@ async function fetchRepoContents(name) {
 // if something calls an async function then that something needs to be async as well
 const RepoDirs = async ({name}) => {
 
-    console.log("test");
-
     const contents = await fetchRepoContents(name);
     const dirs = contents.filter((content) => content.type === 'dir');
-        
+    
+
 
     return (
         <>
