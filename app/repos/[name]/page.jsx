@@ -5,10 +5,11 @@ import Repo from "@/app/components/Repo"
 import RepoDirs from '@/app/components/RepoDirs';
 
 // params: {name} means that the value comes from the url
+// using the name of the repo display it using the Repo component
 const ReposPage = ({params: {name}}) => {
   return (
     <div className='card'>
-        <Link href="/code/repos" className='btn btn-back'>Back to Repositories</Link>
+        <Link href="/repos" className='btn btn-back'>Back to Repositories</Link>
 
         {/* don't want to hold up the whole page for one request so suspense boundaries make it easier */}
         <Suspense fallback={<div>Loading repo...</div>}>

@@ -5,6 +5,7 @@ import {FaStar, FaCodeBranch, FaEye} from "react-icons/fa";
 import React from 'react'
 import { resolve } from "styled-jsx/css";
 
+// gets the names of all of the repos
 async function fetchRepos() {
     const response = await fetch('https://api.github.com/users/samtaylor123/repos', {
             
@@ -31,7 +32,7 @@ const ReposPage = async() => {
             <ul className="repo-list">
                 {repos.map((repo) => (
                     <li key={repo.id}>
-                        <Link href = {`/code/repos/${repo.name}`}>
+                        <Link href = {`/repos/${repo.name}`}>
                             <h3>{ repo.name }</h3>
                             <p>{repo.description}</p>
                             <div className="repo-details">
