@@ -1,9 +1,10 @@
+// "npx create-next-app" to folder with everything in it
+// "npm run dev" to start server
+
+
+
 // home page
 // when we go to localhost this is what displays
-
-
-
-// "npm run dev" to start server
 
 
 
